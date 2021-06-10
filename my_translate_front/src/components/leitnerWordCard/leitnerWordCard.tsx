@@ -2,6 +2,7 @@ import React from 'react';
 import { Frown, Meh, Smile, Check, Play } from 'react-feather';
 import { ExpandedButton, WordCard } from '..';
 import axios from 'axios';
+import { BASE_URL } from '../../services/config';
 
 const LeitnerWordCard: React.FC = () => {
     const qs = require("query-string");
@@ -35,11 +36,11 @@ const LeitnerWordCard: React.FC = () => {
         getNow(_now);
 
         var res = await axios.post(
-            'http://127.0.0.1:8000/show_words/',
+            `${BASE_URL}/show_words/`,
             qs.stringify({ time_stamp: _now }),
         );
 
-        if (res.data.lenght && res.data.lenght !== 0) {
+        if (Object.keys(res.data).length != 0) {
             getWords(res.data);
             getStart(true);
         }
@@ -50,7 +51,7 @@ const LeitnerWordCard: React.FC = () => {
 
     const remember = async () => {
         var res = await axios.post(
-            'http://127.0.0.1:8000/remember_word/',
+            `${BASE_URL}/remember_word/`,
             qs.stringify({
                 word: words[index]["word"],
                 cycle: words[index]["cycle"] + 1,
@@ -59,14 +60,21 @@ const LeitnerWordCard: React.FC = () => {
         );
         if (res.status === 200) {
             sayWord(false);
-            index <= words.length && setIndex(index + 1);
+            if (index < words.length - 1) {
+                setIndex(index + 1)
+            }
+            else {
+                getWords([]);
+                sayWord(false);
+                getStart(false);
+            }
         }
 
     }
 
     const soso_remember = async () => {
         var res = await axios.post(
-            'http://127.0.0.1:8000/remember_word/',
+            `${BASE_URL}/remember_word/`,
             qs.stringify({
                 word: words[index]["word"],
                 cycle: words[index]["cycle"],
@@ -75,13 +83,20 @@ const LeitnerWordCard: React.FC = () => {
         );
         if (res.status === 200) {
             sayWord(false);
-            index <= words.length && setIndex(index + 1);
+            if (index < words.length - 1) {
+                setIndex(index + 1)
+            }
+            else {
+                getWords([]);
+                sayWord(false);
+                getStart(false);
+            }
         }
     }
 
     const not_remember = async () => {
         var res = await axios.post(
-            'http://127.0.0.1:8000/remember_word/',
+            `${BASE_URL}/remember_word/`,
             qs.stringify({
                 word: words[index]["word"],
                 cycle: 1,
@@ -90,7 +105,14 @@ const LeitnerWordCard: React.FC = () => {
         );
         if (res.status === 200) {
             sayWord(false);
-            index <= words.length && setIndex(index + 1);
+            if (index < words.length - 1) {
+                setIndex(index + 1)
+            }
+            else {
+                getWords([]);
+                sayWord(false);
+                getStart(false);
+            }
         }
     }
 
@@ -102,7 +124,7 @@ const LeitnerWordCard: React.FC = () => {
             }
             <div className='container leitnerWordCard'>
                 <div className='col-md-7'>
-                    {start ?
+                    {(words.length && start) ?
                         <>
                             <WordCard text={word ? words[index]["translate"] : words[index]["word"]} />
                             {word ?

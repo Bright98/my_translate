@@ -4,6 +4,7 @@ import { ExpandedButton, Header } from '../../components';
 import { RouteComponentProps } from 'react-router';
 import { withRouter } from 'react-router-dom';
 import axios from 'axios';
+import { BASE_URL } from '../../services/config';
 
 
 type Props = RouteComponentProps;
@@ -49,7 +50,7 @@ class TranslatePage extends React.Component<Props> {
         const translateClick = async () => {
             if (this.state.word) {
                 var res = await axios.post(
-                    'http://127.0.0.1:8000/translate/',
+                    `${BASE_URL}/translate/`,
                     qs.stringify({ word: this.state.word }),
                 );
                 this.setState({
@@ -63,7 +64,7 @@ class TranslatePage extends React.Component<Props> {
             if (this.state.word && this.state.translate) {
                 try {
                     var res = await axios.post(
-                        'http://127.0.0.1:8000/add_to_leitner/',
+                        `${BASE_URL}/add_to_leitner/`,
                         qs.stringify({
                             word: this.state.word,
                             translate: this.state.translate,
