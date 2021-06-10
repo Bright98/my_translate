@@ -1,0 +1,18 @@
+.wordCard {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 15px;
+    background-color: $secondary;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & > h5 {
+        margin: 0;
+        font-size: 20px;
+        color: $dark_primary;
+    }
+}

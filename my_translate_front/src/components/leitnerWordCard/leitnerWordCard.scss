@@ -1,0 +1,44 @@
+.leitnerWordCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    height: 100%;
+
+    & > .col-md-7 {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__moods {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 50px 0;
+
+        &__mood {
+            background-color: $dark_secondary;
+
+            & > svg,span {
+                color: $dark_primary;
+            }
+        }
+    }
+
+    &__sayBtn {
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+
+    &__start {
+        background-color: $extra_dark_secondary;
+
+        & > svg, span {
+            color: $dark_primary;
+        }
+    }
+}
