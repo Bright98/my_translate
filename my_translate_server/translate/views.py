@@ -21,7 +21,7 @@ def translate(request):
 
         return JsonResponse(translate, safe=False)
 
-    return HttpResponse()
+    return HttpResponse("")
 
 
 @csrf_exempt
