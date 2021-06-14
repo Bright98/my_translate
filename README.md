@@ -9,6 +9,11 @@
 ---
 <div dir='rtl'>
 <h3>چطور کار میکنه؟</h3>
+  
+ ![image](https://user-images.githubusercontent.com/37469478/121872402-76beed80-cd1a-11eb-8192-38e267defab1.png)
+![image](https://user-images.githubusercontent.com/37469478/121872544-a1a94180-cd1a-11eb-94d0-925768a7aa4e.png)
+![image](https://user-images.githubusercontent.com/37469478/121872584-b08ff400-cd1a-11eb-8887-f3008defaa42.png)
+
 </div>
 
 
