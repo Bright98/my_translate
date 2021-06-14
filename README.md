@@ -23,11 +23,11 @@
 
 - pip
 
-- <a link='https://pypi.org/project/virtualenv/'>virtualenv</a>
+- [virtualenv](https://pypi.org/project/virtualenv/)
 
-- <a link='https://www.npmjs.com/get-npm'>npm</a>
+- [npm](https://www.npmjs.com/get-npm)
 
-- <a link='https://pypi.org/project/subprocess.run/'>subprocess</a>
+- [subprocess](https://pypi.org/project/subprocess.run/)
 
 <h4>ready to install:</h4>
 
