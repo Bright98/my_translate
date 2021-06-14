@@ -18,10 +18,15 @@
 </div>
 
 <h4>reqirements:</h4>
+
 - python >= 3
+
 - pip
+
 - <a link='https://pypi.org/project/virtualenv/'>virtualenv</a>
+
 - <a link='https://www.npmjs.com/get-npm'>npm</a>
+
 - <a link='https://pypi.org/project/subprocess.run/'>subprocess</a>
 
 <h4>ready to install:</h4>
