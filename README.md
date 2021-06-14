@@ -34,7 +34,7 @@
 ```shell
 virtualenv env
 ```
-<h5>activate virtualenv</h5>
+<h5>activate virtualenv:</h5>
 
 Windows:
 ```shell
