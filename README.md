@@ -27,6 +27,7 @@ cd ./my_translate_script
 ```
 
 <div dir='rtl'>
+
 در نهایت پروژه روی `localhost:8000` قابل استفاده است. :)
 </div>
 
