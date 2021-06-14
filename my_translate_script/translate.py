@@ -38,6 +38,6 @@ print("\n[running front ...]\n")
 if sys.platform == "win32":
     os.system("start /b python3 -m http.server")
 else:
-    os.system("python3 -m http.server 9000 &")
+    os.system("python3 -m http.server &")
 
 print("\n---[successfully done ...]---\n")
