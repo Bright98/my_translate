@@ -56,7 +56,7 @@ source env/bin/activate
 
 ```shell
 cd ./my_translate_script
-./translate.py
+python3 ./translate.py
 ```
 
 <div dir='rtl'>
