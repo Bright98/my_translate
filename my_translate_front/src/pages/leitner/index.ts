@@ -1,1 +1,0 @@
-export { default as LeitnerPage } from './leitner';
