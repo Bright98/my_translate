@@ -17,9 +17,32 @@
 <h3>چطور استفاده کنم؟</h3>
 </div>
 
-<h5>install:</h5>
+<h4>reqirements:</h4>
+- python >= 3
+- pip
+- <a link='https://pypi.org/project/virtualenv/'>virtualenv</a>
+- <a link='https://www.npmjs.com/get-npm'>npm</a>
+- <a link='https://pypi.org/project/subprocess.run/'>subprocess</a>
 
-<h5>run:</h5>
+<h4>ready to install:</h4>
+
+```shell
+virtualenv env
+```
+<h5>activate virtualenv</h5>
+
+Windows:
+```shell
+env\Scripts\activate
+```
+
+Mac OS / Linux
+```shell
+source env/bin/activate
+```
+
+
+<h4>run:</h4>
 
 ```shell
 cd ./my_translate_script
