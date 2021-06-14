@@ -76,8 +76,8 @@ python3 ./translate.py
 
 <h5>آزادکردن پورت 8000 در linux:</h5>
 
+</div>
+
 ```shell
 kill -9 $(ps -A | grep python | awk '{print $1}')
 ```
-
-</div>
