@@ -71,3 +71,13 @@ python3 ./translate.py
 امیدواریم در آینده با خرید host و server پروژه از حالت local خارج بشه :)
 </div>
 
+---
+<div dir='rtl'>
+
+<h5>آزادکردن پورت 8000 در linux:</h5>
+
+```shell
+kill -9 $(ps -A | grep python | awk '{print $1}')
+```
+
+</div>
