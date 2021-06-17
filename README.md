@@ -30,8 +30,6 @@
 
 - [virtualenv](https://pypi.org/project/virtualenv/)
 
-- [npm](https://www.npmjs.com/get-npm)
-
 - [subprocess](https://pypi.org/project/subprocess.run/)
 
 <h4>ready to install:</h4>
