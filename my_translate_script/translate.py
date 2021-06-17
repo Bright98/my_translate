@@ -32,7 +32,7 @@ else:
     os.system("python manage.py runserver 5005 &")
 
 
-os.chdir("../my_translate_front/build")
+os.chdir("../my_translate_front")
 
 print("\n[running front ...]\n")
 if sys.platform == "win32":
