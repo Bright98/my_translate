@@ -1,21 +1,8 @@
-import subprocess
 import os
 import sys
 
 
 if not os.path.exists("./env"):
-
-    # -- envirement --
-    # print("\n[create environment ...]\n")
-    # subprocess.run("virtualenv env", shell=True)
-
-    # if sys.platform == "win32":
-    #     print("\n[activate environment ...]\n")
-    #     os.system("env\\Scripts\\activate")
-    # else:
-    # print("\n[activate environment ...]\n")
-    # subprocess.call("source .env/bin/activate", shell=True, executable="/bin/bash")
-
     print("\n[installing requirements ...]\n")
     os.system("pip install -r ../requirements.txt")
 
