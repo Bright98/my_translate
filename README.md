@@ -1,6 +1,6 @@
 <div dir='rtl'>
 
-<h1><img src={https://user-images.githubusercontent.com/37469478/122631241-9f126780-d0df-11eb-86cd-fc6dffc65c3e.png} width="32" /> my translate | ترجمه من</h1>
+<h1><img src="https://user-images.githubusercontent.com/37469478/122631241-9f126780-d0df-11eb-86cd-fc6dffc65c3e.png" width="32" /> my translate | ترجمه من</h1>
 
 این پروژه شامل سرویس ترجمه (برگرفته از apiهای google translate) و جعبه لایتنر برای مرور کلمات ذخیره شده است.
 
