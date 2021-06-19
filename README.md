@@ -30,8 +30,6 @@
 
 - [virtualenv](https://pypi.org/project/virtualenv/)
 
-- [subprocess](https://pypi.org/project/subprocess.run/)
-
 <h4>ready to install:</h4>
 
 ```shell
