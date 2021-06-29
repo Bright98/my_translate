@@ -2,7 +2,7 @@ import os
 import sys
 
 
-if not os.path.exists("./env"):
+if os.path.exists("./env"):
     print("\n[ installing requirements ... ]\n")
     os.system("pip install -r ../requirements.txt")
 else:

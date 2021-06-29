@@ -1,9 +1,18 @@
 from django.db import models
+import uuid
 
-# Create your models here.
+
+class User(models.Model):
+    id = models.UUIDField(primary_key=True, default=uuid.uuid4, editable=False)
+    email = models.EmailField(unique=True)
+    password = models.CharField(max_length=20)
+
+    def __str__(self):
+        return "id: {} - email: {}".format(self.id, self.email)
 
 
 class Word(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
     word = models.CharField(
         max_length=50,
         unique=True,
@@ -13,6 +22,8 @@ class Word(models.Model):
     time_stamp = models.IntegerField(default=0)
 
     def __str__(self):
-        return "word: {} - translate: {} - cycle: {} - time_stamp: {}".format(
-            self.word, self.translate, self.cycle, self.time_stamp
+        return (
+            "user: {} - word: {} - translate: {} - cycle: {} - time_stamp: {}".format(
+                self.user_id, self.word, self.translate, self.cycle, self.time_stamp
+            )
         )
