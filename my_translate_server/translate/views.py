@@ -1,7 +1,7 @@
 from django.views.decorators.csrf import csrf_exempt
 from django.http import HttpResponse, JsonResponse
 from django.shortcuts import render
-from google_trans_new import google_translator
+from .google_translate.google_translate import google_translator
 from .models import Word
 from django.db import IntegrityError
 
