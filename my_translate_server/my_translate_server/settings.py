@@ -119,3 +119,11 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = "/static/"
+
+# mail
+EMAIL_HOST = "debugmail.io"
+EMAIL_PORT = 25
+EMAIL_HOST_PASSWORD = "4826cb70-10c0-11ec-baf6-dd06d55ae4cc"
+EMAIL_HOST_USER = "www.hhsshhss@gmail.com"
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False
